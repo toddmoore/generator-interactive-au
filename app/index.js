@@ -68,7 +68,7 @@ module.exports = yeoman.generators.Base.extend({
     this.npmInstall();
   },
   end: function () {
-    this.spawnCommand('git', ['commit', '-am' '"Initial commit"']);
+    this.spawnCommand('git', ['commit', '-am', '"Initial commit"']);
     this.spawnCommand('jspm', ['install',  '-y']);
     this.spawnCommand('bower', ['install',  '-y']);
     this.spawnCommand('bower', ['install',  '-y']);
