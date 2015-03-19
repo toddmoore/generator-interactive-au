@@ -1,5 +1,5 @@
 {
-	"name": "interactive-anzac-day",
+	"name": "<%= repo %>",
 	"version": "0.1.2",
 	"homepage": "https://github.com/toddmoore/interactive-anzac-day",
 	"authors": [

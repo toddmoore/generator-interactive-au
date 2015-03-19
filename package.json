@@ -3,16 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "keywords": [
-    "yeoman-generator"
-  ],
-  "files": [
-    "app"
-  ],
+  "keywords": ["yeoman-generator"],
+  "files": ["app"],
   "author": "Todd Moore",
   "license": "ISC",
   "dependencies": {
-    "yeoman-generator": "^0.18.0",
+    "yeoman-generator": "latest",
     "chalk": "^0.5.0",
     "yosay": "^0.3.0"
   }

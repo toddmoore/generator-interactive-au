@@ -55,6 +55,7 @@ module.exports = yeoman.generators.Base.extend({
         path: this.s3Path
       };
 
+      this.template('bower.json', 'bower.json', context);
       this.template('src/index.html', 'src/index.html', context);
       this.template('gulpfile.js', 'gulpfile.js', context);
       this.template('README.md', 'README.md', context);
@@ -69,8 +70,7 @@ module.exports = yeoman.generators.Base.extend({
   },
   end: function () {
     this.spawnCommand('git', ['commit', '-am', '"Initial commit"']);
-    this.spawnCommand('jspm', ['install',  '-y']);
-    this.spawnCommand('bower', ['install',  '-y']);
-    this.spawnCommand('bower', ['install',  '-y']);
+    this.spawnCommand('jspm', ['install', '-y']);
+    this.spawnCommand('bower', ['install', '-y']);
   }
 });
